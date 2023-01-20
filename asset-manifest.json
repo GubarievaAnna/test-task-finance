@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/test-task-finance/static/css/main.073c9b0a.css",
-    "main.js": "/test-task-finance/static/js/main.9037b0b3.js",
-    "static/js/787.4446c858.chunk.js": "/test-task-finance/static/js/787.4446c858.chunk.js",
-    "static/media/logo.svg": "/test-task-finance/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/test-task-finance/static/css/main.8209f708.css",
+    "main.js": "/test-task-finance/static/js/main.884e702e.js",
+    "static/media/OpenSans-SemiBold.ttf": "/test-task-finance/static/media/OpenSans-SemiBold.dd4e8cb6bdf262547359.ttf",
+    "static/media/OpenSans-Regular.ttf": "/test-task-finance/static/media/OpenSans-Regular.1c0a329c683d91fc91aa.ttf",
+    "static/media/sprite.svg": "/test-task-finance/static/media/sprite.da640a0c3af2e7a5e83919754f8a86d7.svg",
     "index.html": "/test-task-finance/index.html",
-    "main.073c9b0a.css.map": "/test-task-finance/static/css/main.073c9b0a.css.map",
-    "main.9037b0b3.js.map": "/test-task-finance/static/js/main.9037b0b3.js.map",
-    "787.4446c858.chunk.js.map": "/test-task-finance/static/js/787.4446c858.chunk.js.map"
+    "main.8209f708.css.map": "/test-task-finance/static/css/main.8209f708.css.map",
+    "main.884e702e.js.map": "/test-task-finance/static/js/main.884e702e.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9037b0b3.js"
+    "static/css/main.8209f708.css",
+    "static/js/main.884e702e.js"
   ]
 }
