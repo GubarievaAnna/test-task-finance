@@ -11,11 +11,11 @@
 
 }
 
-.logoIcon {
+.logo__icon {
     fill: var(--accent-color);
   }
 
-.logoText {
+.logo__title {
   font-size: 28px;
   line-height: 1.36;
 
@@ -33,6 +33,6 @@
   }
 }
 
-.logoAccent {
+.logo__accent {
   color: var(--accent-color);
 }

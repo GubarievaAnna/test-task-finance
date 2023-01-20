@@ -1,7 +1,13 @@
-import Header from "./Header/Header";
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
 
 const App = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 };
 
 export default App;

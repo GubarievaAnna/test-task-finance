@@ -1,6 +1,10 @@
 @import '../../sass/mixin';
 
 .header {
+  background-color: red;
+}
+
+.header__container {
   @include mq(tab) {
     display: flex;
     justify-content: space-between;

@@ -4,8 +4,8 @@ import s from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <header style={{ backgroundColor: "red" }}>
-      <div className={"container " + s.header}>
+    <header className={s.header}>
+      <div className={"container " + s.header__container}>
         <Logo />
         <Navigation />
       </div>

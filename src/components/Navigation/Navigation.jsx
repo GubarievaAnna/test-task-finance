@@ -3,29 +3,29 @@ import s from './Navigation.module.scss';
 const Navigation = () => {
   return (
     <nav className={s.nav}>
-      <ul className={s.navList}>
-        <li className={s.navItem}>
-          <a href="./index.html" className={s.navLink}>
+      <ul className={s.nav__list}>
+        <li className={s.nav__item}>
+          <a href="./index.html" className={s.nav__link}>
             Home
           </a>
         </li>
-        <li className={s.navItem}>
-          <a href="#about" className={s.navLink}>
+        <li className={s.nav__item}>
+          <a href="#about" className={s.nav__link}>
             About
           </a>
         </li>
-        <li className={s.navItem}>
-          <a href="#cases" className={s.navLink}>
+        <li className={s.nav__item}>
+          <a href="#cases" className={s.nav__link}>
             Cases
           </a>
         </li>
-        <li className={s.navItem}>
-          <a href="#blog" className={s.navLink}>
+        <li className={s.nav__item}>
+          <a href="#blog" className={s.nav__link}>
             Blog
           </a>
         </li>
-        <li className={s.navItem}>
-          <a href="#contact" className={s.navLink}>
+        <li className={s.nav__item}>
+          <a href="#contact" className={s.nav__link}>
             Contact
           </a>
         </li>
