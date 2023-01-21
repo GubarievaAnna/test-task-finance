@@ -1,15 +1,15 @@
 import sprite from '../../images/sprite.svg';
 import s from './SocialBlock.module.scss';
 
-const SocialBlock = () => {
+const SocialBlock = ({component}) => {
   return (
-    <ul className={s.soc__list}>
+    <ul className={s.socList}>
       <li>
-        <a href="" className={s.soc__link}>
+        <a href="/" className={component==="footer" ? s.socList__link : s.socList__linkage}>
           <svg
             width="35"
             height="35"
-            className={s.soc__icon}
+            className={s.socList__icon}
             aria-label="Facebook"
           >
             <use href={sprite + '#facebook'}></use>
@@ -17,11 +17,11 @@ const SocialBlock = () => {
         </a>
       </li>
       <li>
-        <a href="" className={s.soc__link}>
+        <a href="/" className={component==="footer" ? s.socList__link : s.socList__linkage}>
           <svg
             width="35"
             height="35"
-            className={s.soc__icon}
+            className={s.socList__icon}
             aria-label="Twitter"
           >
             <use href={sprite + '#twitter'}></use>
@@ -29,11 +29,11 @@ const SocialBlock = () => {
         </a>
       </li>
       <li>
-        <a href="" className={s.soc__link}>
+        <a href="/" className={component==="footer" ? s.socList__link : s.socList__linkage}>
           <svg
             width="40"
             height="35"
-            className={s.soc__icon}
+            className={s.socList__icon}
             aria-label="YouTube"
           >
             <use href={sprite + '#youtube'}></use>
@@ -41,11 +41,11 @@ const SocialBlock = () => {
         </a>
       </li>
       <li>
-        <a href="" className={s.soc__link}>
+        <a href="/" className={component==="footer" ? s.socList__link : s.socList__linkage}>
           <svg
             width="31"
             height="35"
-            className={s.soc__icon}
+            className={s.socList__icon}
             aria-label="Linkedin"
           >
             <use href={sprite + '#linkedin'}></use>

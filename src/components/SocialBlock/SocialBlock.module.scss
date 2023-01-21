@@ -1,7 +1,7 @@
 @import '../../sass/mixin';
 
 
-.soc__list {
+.socList {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +14,22 @@
       }
 }
 
-.soc__icon {
+.socList__icon {
     fill: var(--primary-text-color);
+    opacity: 1;
+
+    transition: fill var(--transition), opacity var(--transition);
 }
 
-.soc__link:hover {
-    .soc__icon {
+.socList__link:hover {
+    .socList__icon {
         fill: var(--accent-color);
+    }
+}
+
+.socList__linkage:hover {
+    .socList__icon {
+        opacity: 0.8;
     }
 }
 

@@ -1,0 +1,83 @@
+@import '../../sass/mixin';
+
+.sectionCases {
+  text-align: center;
+
+  padding-top: 56px;
+  padding-bottom: 40px;
+
+  @include mq(tab) {
+    padding-top: 48px;
+  }
+
+  @include mq(desk) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.sectionCases__description {
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 16px;
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+
+  @include mq(desk) {
+    line-height: 1.83;
+  }
+}
+
+.sectionCases__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.38;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 24px;
+
+  @include mq(mob-only) {
+    max-width: 219px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tab) {
+    font-size: 40px;
+    line-height: 1.35;
+  }
+
+  @include mq(desk) {
+    line-height: 1.2;
+  }
+}
+
+.sectionCases__text {
+  font-size: 16px;
+  line-height: 1.38;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 31px;
+
+  @include mq(mob-only) {
+    max-width: 207px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+
+    margin-bottom: 30px;
+  }
+
+  @include mq(desk) {
+    line-height: 1.2;
+  }
+}
