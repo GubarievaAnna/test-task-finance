@@ -5,7 +5,7 @@ const Navigation = () => {
     <nav className={s.nav}>
       <ul className={s.nav__list}>
         <li className={s.nav__item}>
-          <a href="./index.html" className={s.nav__link}>
+          <a href="/" className={s.nav__link}>
             Home
           </a>
         </li>

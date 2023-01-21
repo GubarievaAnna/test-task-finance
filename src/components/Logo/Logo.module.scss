@@ -5,19 +5,21 @@
   display: flex;
   align-items: center;
 
+  transition: transform var(--transition);
+
   @include mq(mob-only) {
     margin-bottom: 16px;
   }
 
-}
-
-.logo__icon {
-    fill: var(--accent-color);
+  &:hover {
+    transform: scale(1.05);
   }
+}
 
 .logo__title {
   font-size: 28px;
   line-height: 1.36;
+  letter-spacing: 0.02em;
 
   margin-left: 8px;
 

@@ -1,7 +1,13 @@
 @import '../../sass/mixin';
 
 .header {
-  background-color: red;
+position: fixed;
+left: 50%;
+transform: translateX(-50%);
+
+  background-color: transparent;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header__container {
