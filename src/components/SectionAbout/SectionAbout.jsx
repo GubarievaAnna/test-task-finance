@@ -18,7 +18,7 @@ import s from './SectionAbout.module.scss';
 const SectionAbout = () => {
   return (
     <section id="about">
-      <div className={'container-nopadding ' + s.sectionAbout}>
+      <div className={'container-nopadding ' + s.about}>
         <picture>
           <source
             srcSet={`${desktop_1x_webp} 1x, ${desktop_2x_webp} 2x`}
@@ -52,20 +52,20 @@ const SectionAbout = () => {
           />
           <img src={desktop_1x_jpg} alt="Office" />
         </picture>
-        <div className={s.sectionAbout__content}>
-          <p className={s.sectionAbout__description}>
+        <div className={s.about__content}>
+          <p className={s.about__description}>
             What you are looking for
           </p>
-          <h2 className={s.sectionAbout__title}>
+          <h2 className={s.about__title}>
             We provide bespoke solutions
           </h2>
-          <p className={s.sectionAbout__text}>
+          <p className={s.about__text}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
             ipsum dignissimos quae laudantium asperiores nam aliquid impedit
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </p>
-          <a href="/" className={s.sectionAbout__button}>
+          <a href="/" className={s.about__button}>
             Read More
           </a>
         </div>

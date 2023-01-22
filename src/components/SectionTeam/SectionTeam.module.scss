@@ -1,6 +1,6 @@
 @import '../../sass/mixin';
 
-.sectionTeam {
+.team {
   text-align: center;
 
   padding-top: 72px;
@@ -17,7 +17,7 @@
   }
 }
 
-.sectionTeam__description {
+.team__description {
   font-size: 16px;
   line-height: 1.38;
   color: var(--secondary-text-color);
@@ -34,7 +34,7 @@
   }
 }
 
-.sectionTeam__title {
+.team__title {
   font-weight: 400;
   font-size: 32px;
   line-height: 1.38;
@@ -48,7 +48,7 @@
   }
 }
 
-.sectionTeam__text {
+.team__text {
   font-size: 16px;
   line-height: 1.38;
   color: var(--secondary-text-color);
@@ -73,7 +73,7 @@
   }
 }
 
-.sectionTeam__list {
+.team__list {
 
   @include mq(tab) {
     display: grid;

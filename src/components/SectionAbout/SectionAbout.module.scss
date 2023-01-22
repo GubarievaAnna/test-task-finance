@@ -1,13 +1,13 @@
 @import '../../sass/mixin';
 
-.sectionAbout {
+.about {
 
     @include mq(tab) {
       display: flex;
     }
   }
 
-.sectionAbout__content {
+.about__content {
   background-color: var(--accent-color);
 
   padding: 79px 20px;
@@ -23,7 +23,7 @@
   }
 }
 
-.sectionAbout__description {
+.about__description {
   font-size: 16px;
   line-height: 1.38;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.sectionAbout__title {
+.about__title {
   font-weight: 400;
   font-size: 32px;
   line-height: 1.38;
@@ -48,7 +48,7 @@
   }
 }
 
-.sectionAbout__text {
+.about__text {
   font-size: 16px;
   line-height: 1.38;
 
@@ -60,7 +60,7 @@
   }
 }
 
-.sectionAbout__button {
+.about__button {
   display: inline-block;
   font-size: 16px;
   line-height: 1.38;

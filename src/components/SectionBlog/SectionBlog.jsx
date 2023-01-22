@@ -18,7 +18,7 @@ import s from './SectionBlog.module.scss';
 const SectionBlog = () => {
   return (
     <section id="blog">
-      <div className={"container-nopadding " + s.sectionBlog}>
+      <div className={"container-nopadding " + s.blog}>
         <picture>
           <source
             srcSet={`${desktop_1x_webp} 1x, ${desktop_2x_webp} 2x`}
@@ -52,16 +52,16 @@ const SectionBlog = () => {
           />
           <img src={desktop_1x_jpg} alt="Desktop" />
         </picture>
-        <div className={s.sectionBlog__content}>
-          <p className={s.sectionBlog__date}>April 16 2020</p>
-          <h2 className={s.sectionBlog__title}>Blog Post One</h2>
-          <p className={s.sectionBlog__text}>
+        <div className={s.blog__content}>
+          <p className={s.blog__date}>April 16 2020</p>
+          <h2 className={s.blog__title}>Blog Post One</h2>
+          <p className={s.blog__text}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate,
             ipsum dignissimos quae laudantium asperiores nam aliquid impedit
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </p>
-          <a href="/" className={s.sectionBlog__button}>
+          <a href="/" className={s.blog__button}>
             Read Our Blog
           </a>
         </div>

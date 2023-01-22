@@ -5,6 +5,7 @@ import SectionAbout from './SectionAbout/SectionAbout';
 import SectionCases from './SectionCases/SectionCases';
 import SectionBlog from './SectionBlog/SectionBlog';
 import SectionTeam from './SectionTeam/SectionTeam';
+import SectionContact from './SectionContact/SectionContact';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <SectionCases/>
         <SectionBlog/>
         <SectionTeam/>
+        <SectionContact/>
       </main>
       <Footer />
     </>

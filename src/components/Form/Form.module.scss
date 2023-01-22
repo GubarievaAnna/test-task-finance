@@ -1,0 +1,90 @@
+@import '../../sass/mixin';
+
+.form__field {
+  position: relative;
+
+  &--first {
+    margin-bottom: 25px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #808080;
+
+  &.form__label--valid {
+    top: 0;
+    transform: translateY(-100%);
+  }
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  padding: 16px 8px;
+  outline: none;
+
+  &:focus-within + .form__label {
+    top: 0;
+    transform: translateY(-100%);
+  }
+
+}
+
+.form__button {
+  font-size: 18px;
+  line-height: 1.39;
+
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  border-radius: 5px;
+  border: none;
+
+  padding: 16px 56px;
+
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    height: 16px;
+  
+    padding-left: 8px;
+    margin-bottom: 8px;
+
+    @include mq(desk) {
+        height: 25px;
+        margin-bottom: 15px;
+      }
+  }
+
+.error__text {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #eb5757;
+
+  margin-left: 5px;
+
+  @include mq(desk) {
+    font-size: 14px;
+  }
+}
+
+

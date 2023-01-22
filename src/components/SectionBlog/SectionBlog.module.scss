@@ -1,13 +1,13 @@
 @import '../../sass/mixin';
 
-.sectionBlog {
+.blog {
     @include mq(tab) {
       display: flex;
       flex-direction: row-reverse;
     }
   }
 
-.sectionBlog__content {
+.blog__content {
   background-color: #0284d0;
 
   padding: 48px 20px 58px;
@@ -23,7 +23,7 @@
   }
 }
 
-.sectionBlog__date {
+.blog__date {
   font-size: 16px;
   line-height: 1.38;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.sectionBlog__title {
+.blog__title {
   font-weight: 400;
   font-size: 32px;
   line-height: 1.38;
@@ -48,7 +48,7 @@
   }
 }
 
-.sectionBlog__text {
+.blog__text {
   font-size: 16px;
   line-height: 1.38;
 
@@ -60,7 +60,7 @@
   }
 }
 
-.sectionBlog__button {
+.blog__button {
   display: inline-block;
   font-size: 16px;
   line-height: 1.38;

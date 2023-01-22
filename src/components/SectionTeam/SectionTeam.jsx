@@ -18,15 +18,15 @@ import s from './SectionTeam.module.scss';
 
 const SectionTeam = () => {
   return (
-    <section className={s.sectionTeam}>
+    <section className={s.team}>
       <div className="container">
-        <p className={s.sectionTeam__description}>Who we are</p>
-        <h2 className={s.sectionTeam__title}>Our Professional Team</h2>
-        <p className={s.sectionTeam__text}>
+        <p className={s.team__description}>Who we are</p>
+        <h2 className={s.team__title}>Our Professional Team</h2>
+        <p className={s.team__text}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
           sapiente!
         </p>
-        <ul className={s.sectionTeam__list}>
+        <ul className={s.team__list}>
           <li className={s.memberCard}>
             <div className={s.memberCard__thumb}>
               <picture className={s.memberCard__image}>
