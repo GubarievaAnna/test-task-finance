@@ -1,28 +1,38 @@
 @import '../../sass/mixin';
 
 .header {
-position: fixed;
-left: 50%;
-transform: translateX(-50%);
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
 
   background-color: transparent;
   padding-top: 22px;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
 
   @include mq(tab) {
     padding-top: 16px;
+    padding-bottom: 6px;
   }
 
   @include mq(desk) {
     padding-top: 32px;
+    padding-bottom: 10px;
+  }
+
+  &--active {
+    composes: header;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   }
 }
 
 .header__container {
-  
   @include mq(tab) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
+
+

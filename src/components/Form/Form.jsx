@@ -1,5 +1,6 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { toast } from 'react-toastify';
 
 import sprite from '../../images/sprite.svg';
 import s from './Form.module.scss';
@@ -31,11 +32,17 @@ const Form = () => {
     const { name, email } = formik.values;
     event.preventDefault();
     if (email === '') {
-      // toast.error('Email must be completed', {
-      //   autoClose: 2000,
-      //   theme: 'colored',
-      // });
-      alert('mail must be completed');
+      toast.error('Email must be completed', {
+        autoClose: 2000,
+        theme: 'colored',
+      });
+      return;
+    }
+    if (formik.touched.email || formik.errors.email) {
+      toast.error('Enter valid email', {
+        autoClose: 2000,
+        theme: 'colored',
+      });
       return;
     }
     console.log({ name, email });
@@ -44,7 +51,7 @@ const Form = () => {
 
   return (
     <>
-      <form className={s.form} onSubmit={onFormSubmit} autocomplete>
+      <form className={s.form} onSubmit={onFormSubmit} autoComplete="true">
         <div
           role="group"
           className={`${s.form__field} ${s['form__field--first']}`}
@@ -58,7 +65,12 @@ const Form = () => {
             onBlur={formik.handleBlur}
             value={formik.values.name}
           />
-          <label htmlFor="name" className={`${s.form__label} ${formik.values.name && s["form__label--valid"]}`}>
+          <label
+            htmlFor="name"
+            className={`${s.form__label} ${
+              formik.values.name && s['form__label--valid']
+            }`}
+          >
             Enter your name
           </label>
         </div>
@@ -71,7 +83,12 @@ const Form = () => {
             onBlur={formik.handleBlur}
             value={formik.values.email}
           />
-          <label htmlFor="email" className={`${s.form__label} ${formik.values.email && s["form__label--valid"]}`}>
+          <label
+            htmlFor="email"
+            className={`${s.form__label} ${
+              formik.values.email && s['form__label--valid']
+            }`}
+          >
             Enter email*
           </label>
         </div>
@@ -90,7 +107,9 @@ const Form = () => {
             </>
           )}
         </div>
-        <button type="submit" className={s.form__button}>Send</button>
+        <button type="submit" className={s.form__button}>
+          Send
+        </button>
       </form>
     </>
   );

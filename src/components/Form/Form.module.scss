@@ -19,6 +19,8 @@
 
   color: #808080;
 
+  transition: transform var(--transition);
+
   &.form__label--valid {
     top: 0;
     transform: translateY(-100%);
@@ -37,6 +39,7 @@
   padding: 16px 8px;
   outline: none;
 
+
   &:focus-within + .form__label {
     top: 0;
     transform: translateY(-100%);
@@ -54,6 +57,8 @@
   border: none;
 
   padding: 16px 56px;
+
+  transition: background-color var(--transition);
 
   &:hover {
     background-color: var(--hover-color);
