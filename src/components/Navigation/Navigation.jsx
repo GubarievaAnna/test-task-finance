@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import s from './Navigation.module.scss';
 
 const Navigation = () => {
@@ -10,24 +11,52 @@ const Navigation = () => {
           </a>
         </li>
         <li className={s.nav__item}>
-          <a href="#about" className={s.nav__link}>
+          <Link
+            className={s.nav__link}
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             About
-          </a>
+          </Link>
         </li>
         <li className={s.nav__item}>
-          <a href="#cases" className={s.nav__link}>
+          <Link
+            className={s.nav__link}
+            to="cases"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Cases
-          </a>
+          </Link>
         </li>
         <li className={s.nav__item}>
-          <a href="#blog" className={s.nav__link}>
+          <Link
+            className={s.nav__link}
+            to="blog"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Blog
-          </a>
+          </Link>
         </li>
         <li className={s.nav__item}>
-          <a href="#contact" className={s.nav__link}>
+          <Link
+            className={s.nav__link}
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

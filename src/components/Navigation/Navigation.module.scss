@@ -25,6 +25,7 @@
 
 .nav__link {
   display: inline-block;
+  cursor: pointer;
   padding: 10px 0px;
 
   &::after {

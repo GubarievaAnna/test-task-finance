@@ -74,7 +74,6 @@
 }
 
 .team__list {
-
   @include mq(tab) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -102,7 +101,6 @@
       margin-bottom: 30px;
     }
   }
-
 }
 
 .memberCard__thumb {
@@ -131,9 +129,9 @@
   align-items: center;
   justify-content: center;
 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-color: #040404;
+  opacity: 0.6;
 }
-
 
 .memberCard__content {
   padding-top: 16px;
