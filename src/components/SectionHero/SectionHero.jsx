@@ -9,7 +9,7 @@ const SectionHero = () => {
         <h2 className={s.hero__text}>
           We provide world class financial assistance
         </h2>
-        <button type="button" className={s.button}>
+        <a href="/" className={s.button}>
           <svg
             className={s.button__icon}
             width="12"
@@ -19,7 +19,7 @@ const SectionHero = () => {
             <use href={sprite + '#more'}></use>
           </svg>
           <p className={s.button__text}>Read more</p>
-        </button>
+        </a>
       </div>
     </section>
   );

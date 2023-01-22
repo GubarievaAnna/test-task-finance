@@ -1,0 +1,85 @@
+@import '../../sass/mixin';
+
+.sectionBlog {
+    @include mq(tab) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+.sectionBlog__content {
+  background-color: #0284d0;
+
+  padding: 48px 20px 58px;
+
+  @include mq(tab) {
+    width: 400px;
+    padding: 58px 32px;
+  }
+
+  @include mq(desk) {
+    width: 690px;
+    padding: 80px 20px 78px 28px;
+  }
+}
+
+.sectionBlog__date {
+  font-size: 16px;
+  line-height: 1.38;
+
+  margin-bottom: 16px;
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+.sectionBlog__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.38;
+
+  margin-bottom: 24px;
+
+  @include mq(tab) {
+    font-size: 40px;
+    line-height: 1.35;
+  }
+}
+
+.sectionBlog__text {
+  font-size: 16px;
+  line-height: 1.38;
+
+  margin-bottom: 24px;
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+.sectionBlog__button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.38;
+
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  padding: 16px 32px;
+
+  transition: color var(--transition), background-color var(--transition), border var(--transition);
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+
+  &:hover {
+    background-color: #F4F4F4;
+    color: #0284D0;
+    border: 1px solid #0284D0;
+  }
+}

@@ -6,11 +6,20 @@ left: 50%;
 transform: translateX(-50%);
 
   background-color: transparent;
-  padding-top: 32px;
+  padding-top: 22px;
   padding-bottom: 32px;
+
+  @include mq(tab) {
+    padding-top: 16px;
+  }
+
+  @include mq(desk) {
+    padding-top: 32px;
+  }
 }
 
 .header__container {
+  
   @include mq(tab) {
     display: flex;
     justify-content: space-between;

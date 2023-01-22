@@ -8,7 +8,7 @@
   transition: transform var(--transition);
 
   @include mq(mob-only) {
-    margin-bottom: 16px;
+    margin-bottom: 6px;
   }
 
   &:hover {

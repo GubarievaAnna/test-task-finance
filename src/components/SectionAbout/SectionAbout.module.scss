@@ -1,0 +1,85 @@
+@import '../../sass/mixin';
+
+.sectionAbout {
+
+    @include mq(tab) {
+      display: flex;
+    }
+  }
+
+.sectionAbout__content {
+  background-color: var(--accent-color);
+
+  padding: 79px 20px;
+
+  @include mq(tab) {
+    width: 400px;
+    padding: 61px 32px;
+  }
+
+  @include mq(desk) {
+    width: 690px;
+    padding: 80px 28px 84px 20px;
+  }
+}
+
+.sectionAbout__description {
+  font-size: 16px;
+  line-height: 1.38;
+
+  margin-bottom: 16px;
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+.sectionAbout__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.38;
+
+  margin-bottom: 24px;
+
+  @include mq(tab) {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+.sectionAbout__text {
+  font-size: 16px;
+  line-height: 1.38;
+
+  margin-bottom: 24px;
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+.sectionAbout__button {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.38;
+
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  padding: 16px 32px;
+
+  transition: color var(--transition), background-color var(--transition), border var(--transition);
+
+  @include mq(tab) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+
+  &:hover {
+    background-color: #F4F4F4;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
