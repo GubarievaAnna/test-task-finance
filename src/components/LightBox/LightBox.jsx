@@ -11,10 +11,16 @@ const portalModal = document.querySelector('#modal-root');
 const LightBox = ({ setIsOpen, curImg, setCurImg, totalImg }) => {
   const [isLoading, setIsLoading] = useState(false);
 
+  const closeLightBox = () => {
+    setIsOpen(false);
+    document.body.classList.remove('no-scroll');
+  };
+
   useEffect(() => {
     const handleKeyDown = e => {
-      if (e.code === 'Escape') setIsOpen(false);
+      if (e.code === 'Escape') closeLightBox();
     };
+
     document.addEventListener('keydown', handleKeyDown);
 
     return () => {
@@ -24,7 +30,7 @@ const LightBox = ({ setIsOpen, curImg, setCurImg, totalImg }) => {
   }, []);
 
   const onBackdropClick = e => {
-    if (e.currentTarget === e.target) setIsOpen(false);
+    if (e.currentTarget === e.target) closeLightBox();
   };
 
   const changeImage = number => {
@@ -92,7 +98,7 @@ const LightBox = ({ setIsOpen, curImg, setCurImg, totalImg }) => {
               type="button"
               aria-label="close"
               className={s.modal__close}
-              onClick={() => setIsOpen(false)}
+              onClick={closeLightBox}
             ></button>
           </div>
         )}
@@ -103,11 +109,10 @@ const LightBox = ({ setIsOpen, curImg, setCurImg, totalImg }) => {
 };
 
 LightBox.propTypes = {
-    setIsOpen: PropTypes.func.isRequired,
-    setCurImg: PropTypes.func.isRequired,
-    curImg: PropTypes.number.isRequired,
-    totalImg: PropTypes.number.isRequired,
-  };
-
+  setIsOpen: PropTypes.func.isRequired,
+  setCurImg: PropTypes.func.isRequired,
+  curImg: PropTypes.number.isRequired,
+  totalImg: PropTypes.number.isRequired,
+};
 
 export default LightBox;

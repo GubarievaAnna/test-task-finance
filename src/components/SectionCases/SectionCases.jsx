@@ -10,6 +10,7 @@ const SectionCases = () => {
   const openLightBox = number => {
     setIsOpen(true);
     setCurImg(number);
+    document.body.classList.add('no-scroll');
   };
 
   const createArray = number => {

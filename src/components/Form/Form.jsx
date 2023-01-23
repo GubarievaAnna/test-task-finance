@@ -1,6 +1,5 @@
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { toast } from 'react-toastify';
 
 import sprite from '../../images/sprite.svg';
 import s from './Form.module.scss';
@@ -23,37 +22,18 @@ const Form = () => {
     }),
   });
 
-  const reset = () => {
-    formik.values.name = '';
-    formik.values.email = '';
-  };
-
-  const onFormSubmit = event => {
-    event.preventDefault();
-
+  const onButtonClick = () => {
     if (formik.values.email === '') {
-      toast.error('Email must be completed', {
-        autoClose: 2000,
-        theme: 'colored',
-      });
+      formik.setFieldError('email', 'This is a required field');
+      formik.setFieldTouched('email', true);
       return;
     }
-
-    if (formik.errors.email) {
-      toast.error('Enter valid email', {
-        autoClose: 2000,
-        theme: 'colored',
-      });
-      return;
-    }
-
-    reset();
   };
 
   return (
     <>
-      <form className={s.form} onSubmit={onFormSubmit} autoComplete="true" name="contact" method="post">
-      <input type="hidden" name="form-name" value="contact" />
+      <form className={s.form} autoComplete="true" name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
         <div
           role="group"
           className={`${s.form__field} ${s['form__field--first']}`}
@@ -84,6 +64,7 @@ const Form = () => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
+            required
           />
           <label
             htmlFor="email"
@@ -109,7 +90,11 @@ const Form = () => {
             </>
           )}
         </div>
-        <button type="submit" className={s.form__button}>
+        <button
+          type="submit"
+          className={s.form__button}
+          onClick={onButtonClick}
+        >
           Send
         </button>
       </form>

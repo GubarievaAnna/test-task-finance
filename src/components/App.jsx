@@ -1,6 +1,3 @@
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import SectionHero from './SectionHero/SectionHero';
@@ -23,7 +20,6 @@ const App = () => {
         <SectionContact/>
       </main>
       <Footer />
-      <ToastContainer />
     </>
   );
 };
