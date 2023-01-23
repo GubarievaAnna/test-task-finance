@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-task-finance/static/css/main.7b1d873c.css",
-    "main.js": "/test-task-finance/static/js/main.cb19d94c.js",
+    "main.css": "/test-task-finance/static/css/main.4b47f5b5.css",
+    "main.js": "/test-task-finance/static/js/main.8ba4d3aa.js",
     "static/media/hero_desktop@2x.jpg": "/test-task-finance/static/media/hero_desktop@2x.8584bcfbac25cbc4f30d.jpg",
     "static/media/hero_tablet@2x.jpg": "/test-task-finance/static/media/hero_tablet@2x.8aa9b00b20c0bf4700c3.jpg",
     "static/media/hero_desktop.jpg": "/test-task-finance/static/media/hero_desktop.95a018e78a5963c62bf0.jpg",
@@ -82,11 +82,11 @@
     "static/media/contact_mobile.webp": "/test-task-finance/static/media/contact_mobile.ca0f5d4bbcdd6863eabc.webp",
     "static/media/sprite.svg": "/test-task-finance/static/media/sprite.419d2bc20a03a8ba4e30adb6d37e5669.svg",
     "index.html": "/test-task-finance/index.html",
-    "main.7b1d873c.css.map": "/test-task-finance/static/css/main.7b1d873c.css.map",
-    "main.cb19d94c.js.map": "/test-task-finance/static/js/main.cb19d94c.js.map"
+    "main.4b47f5b5.css.map": "/test-task-finance/static/css/main.4b47f5b5.css.map",
+    "main.8ba4d3aa.js.map": "/test-task-finance/static/js/main.8ba4d3aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b1d873c.css",
-    "static/js/main.cb19d94c.js"
+    "static/css/main.4b47f5b5.css",
+    "static/js/main.8ba4d3aa.js"
   ]
 }
