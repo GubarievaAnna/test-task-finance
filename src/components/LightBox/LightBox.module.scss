@@ -13,15 +13,25 @@
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
-  max-width: 90%;
-  max-height: 90%;
   border-radius: 5px;
   padding: 5px;
   background-color: var(--primary-text-color);
+
+  @include mq(mob-only) {
+    width: 90%;
+    max-width: 638px;
+  }
+
+  @include mq(tab) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 638px;
+  }
 }
 
 .button {

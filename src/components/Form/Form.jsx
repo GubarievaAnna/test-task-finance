@@ -29,15 +29,16 @@ const Form = () => {
   };
 
   const onFormSubmit = event => {
-    const { name, email } = formik.values;
     event.preventDefault();
-    if (email === '') {
+
+    if (formik.values.email === '') {
       toast.error('Email must be completed', {
         autoClose: 2000,
         theme: 'colored',
       });
       return;
     }
+
     if (formik.touched.email || formik.errors.email) {
       toast.error('Enter valid email', {
         autoClose: 2000,
@@ -45,13 +46,14 @@ const Form = () => {
       });
       return;
     }
-    console.log({ name, email });
+
     reset();
   };
 
   return (
     <>
-      <form className={s.form} onSubmit={onFormSubmit} autoComplete="true">
+      <form className={s.form} onSubmit={onFormSubmit} autoComplete="true" name="contact" method="post">
+      <input type="hidden" name="form-name" value="contact" />
         <div
           role="group"
           className={`${s.form__field} ${s['form__field--first']}`}
