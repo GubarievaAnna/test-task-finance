@@ -3,7 +3,7 @@ import s from"./Logo.module.scss";
 
 const Logo = () => {
     return (
-      <a href="/test-task-finance" className={s.logo}>
+      <a href="/" className={s.logo}>
         <svg className={s.logo__icon} width="40" height="31" aria-label="Logo sign"><use href={sprite + "#logo"}></use></svg>
         <p className={s.logo__title}><span className={s.logo__accent}>Finance</span>Ledger</p>
       </a>
