@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import PropTypes from 'prop-types';
 
 import loader from '../../images/buttons/loading.gif';
 
@@ -100,5 +101,13 @@ const LightBox = ({ setIsOpen, curImg, setCurImg, totalImg }) => {
     portalModal
   );
 };
+
+LightBox.propTypes = {
+    setIsOpen: PropTypes.func.isRequired,
+    setCurImg: PropTypes.func.isRequired,
+    curImg: PropTypes.number.isRequired,
+    totalImg: PropTypes.number.isRequired,
+  };
+
 
 export default LightBox;
