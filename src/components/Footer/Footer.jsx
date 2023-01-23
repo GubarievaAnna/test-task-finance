@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className="container">
-        <SocialBlock component="footer"/>
+        <SocialBlock/>
         <p className={s.footer__copyright}>Copyright &#169; 2021 - FinanceLedger</p>
       </div>
     </footer>

@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import sprite from '../../images/sprite.svg';
 import s from './SocialBlock.module.scss';
 
-const SocialBlock = ({component}) => {
+const SocialBlock = ({component="footer"}) => {
   return (
     <ul className={s.socList}>
       <li>
@@ -54,6 +55,10 @@ const SocialBlock = ({component}) => {
       </li>
     </ul>
   );
+};
+
+SocialBlock.propTypes = {
+  component: PropTypes.string,
 };
 
 export default SocialBlock;

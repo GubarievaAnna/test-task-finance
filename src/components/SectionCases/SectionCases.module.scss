@@ -81,3 +81,33 @@
     line-height: 1.2;
   }
 }
+
+.cases__wrapper {
+  @include mq(tab) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  @include mq(desk) {
+    column-gap: 21px;
+  }
+}
+
+.cases__image {
+  display: block;
+
+  cursor: pointer;
+
+  transition: opacity var(--transition);
+
+  &:not(:last-child) {
+    @include mq(mob-only) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
