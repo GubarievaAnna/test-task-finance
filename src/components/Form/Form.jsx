@@ -39,7 +39,7 @@ const Form = () => {
       return;
     }
 
-    if (formik.touched.email || formik.errors.email) {
+    if (formik.errors.email) {
       toast.error('Enter valid email', {
         autoClose: 2000,
         theme: 'colored',
