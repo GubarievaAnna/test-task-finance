@@ -107,7 +107,7 @@
   position: relative;
   cursor: pointer;
 
-  transition: transform var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition);
 
   &:hover {
     transform: scale(1.01);

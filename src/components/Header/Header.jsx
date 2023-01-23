@@ -10,7 +10,6 @@ const Header = () => {
 
   const isMobile = useMediaQuery({ query: '(max-width: 767.99px)' });
   const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
-  const isDesktop = useMediaQuery({ query: '(min-width: 1360px)' });
 
 
   const handleScroll = () => {
@@ -18,11 +17,7 @@ const Header = () => {
       setIsActive(true);
       return;
     }
-    if (isTablet && window.scrollY > 70 && !isActive) {
-      setIsActive(true);
-      return;
-    }
-    if (isDesktop && window.scrollY > 90 && !isActive) {
+    if (isTablet && window.scrollY > 80 && !isActive) {
       setIsActive(true);
       return;
     }

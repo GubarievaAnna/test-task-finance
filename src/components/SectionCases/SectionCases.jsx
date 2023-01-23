@@ -1,25 +1,25 @@
 import { useState } from 'react';
-import FsLightbox from 'fslightbox-react';
+import LightBox from '../LightBox/LightBox';
 
 import s from './SectionCases.module.scss';
 
 const SectionCases = () => {
-  const [toggler, setToggler] = useState(false);
-  const [slide, setSlide] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
+  const [curImg, setCurImg] = useState(1);
 
-  const openSlider = id => {
-    setToggler(!toggler);
-    setSlide(id);
+  const openLightBox = number => {
+    setIsOpen(true);
+    setCurImg(number);
   };
 
   const createArray = number => {
-    const newArray = Array(6)
-      .fill(0)
+    const newArray = Array(number)
+      .fill('')
       .map((el, index) => index + 1);
     return newArray;
   };
 
-  const array = createArray(6);
+  const images = createArray(6);
 
   return (
     <section className={s.cases} id="cases">
@@ -31,11 +31,11 @@ const SectionCases = () => {
           sapiente!
         </p>
         <div className={s.cases__wrapper}>
-          {array.map(el => (
+          {images.map(el => (
             <picture
               key={el}
               className={s.cases__image}
-              onClick={() => openSlider(el)}
+              onClick={() => openLightBox(el)}
             >
               <source
                 srcSet={`${require(`../../images/cases/cases${el}.webp`)} 1x, ${require(`../../images/cases/cases${el}@2x.webp`)} 2x`}
@@ -52,13 +52,14 @@ const SectionCases = () => {
             </picture>
           ))}
         </div>
-        <FsLightbox
-          toggler={toggler}
-          sources={array.map(
-            el => `${require(`../../images/cases/cases${el}.jpg`)}`
-          )}
-          slide={slide}
-        />
+        {isOpen && (
+          <LightBox
+            setIsOpen={setIsOpen}
+            curImg={curImg}
+            setCurImg={setCurImg}
+            totalImg={images.length}
+          />
+        )}
       </div>
     </section>
   );
