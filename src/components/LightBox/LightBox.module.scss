@@ -48,8 +48,17 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @include mq(mob-only) {
+    width: 60px;
+    height: 60px;
+  }
+
   &--prev {
     left: -30px;
+
+    @include mq(mob-only) {
+      left: -20px;
+    }
   }
 
   &--prev:hover {
@@ -58,6 +67,10 @@
 
   &--next {
     right: -30px;
+
+    @include mq(mob-only) {
+      right: -20px;
+    }
   }
 
   &--next:hover {
