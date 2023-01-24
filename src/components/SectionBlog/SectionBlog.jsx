@@ -1,11 +1,11 @@
-import Picture from "../Picture/Picture"
+import Picture from '../Picture/Picture';
 import s from './SectionBlog.module.scss';
 
 const SectionBlog = () => {
   return (
     <section id="blog">
-      <div className={"container-nopadding " + s.blog}>
-        <Picture component="blog" alt="Desktop"/>
+      <div className={'container-nopadding ' + s.blog}>
+        <Picture component="blog" alt="Desktop" />
         <div className={s.blog__content}>
           <p className={s.blog__date}>April 16 2020</p>
           <h2 className={s.blog__title}>Blog Post One</h2>
@@ -15,7 +15,12 @@ const SectionBlog = () => {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </p>
-          <a href="/" className={s.blog__button}>
+          <a
+            href="/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className={s.blog__button}
+          >
             Read Our Blog
           </a>
         </div>

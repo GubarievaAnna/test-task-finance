@@ -9,7 +9,12 @@ const SectionHero = () => {
         <h2 className={s.hero__text}>
           We provide world class financial assistance
         </h2>
-        <a href="/" className={s.button}>
+        <a
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className={s.button}
+        >
           <svg
             className={s.button__icon}
             width="12"
