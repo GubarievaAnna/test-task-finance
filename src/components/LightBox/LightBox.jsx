@@ -55,9 +55,7 @@ const LightBox = ({ setIsOpen, curImg, setCurImg, totalImg }) => {
           ></button>
         )}
         <picture
-          className={`${s.modal__image} ${
-            isLoading && s['modal_image--hidden']
-          }`}
+          className={!isLoading ? s.modal__image : s['modal__image--hidden']}
         >
           <source
             srcSet={`${require(`../../images/cases/cases${curImg}.webp`)} 1x, ${require(`../../images/cases/cases${curImg}@2x.webp`)} 2x`}

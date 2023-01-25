@@ -84,8 +84,13 @@
   }
 }
 
-.modal_image--hidden {
-  opacity: 0;
+.modal__image {
+
+  opacity: 1;
+
+  &--hidden {
+    opacity: 0;
+  }
 }
 
 .modal_overlay {

@@ -100,6 +100,7 @@
 }
 
 .cases__image {
+  display: block;
   cursor: pointer;
 
   transition: opacity var(--transition);
