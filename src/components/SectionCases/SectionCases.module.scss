@@ -93,21 +93,19 @@
     column-gap: 21px;
   }
 }
+.cases__item:not(:last-child) {
+  @include mq(mob-only) {
+    margin-bottom: 8px;
+  }
+}
 
 .cases__image {
-  display: block;
-
   cursor: pointer;
 
   transition: opacity var(--transition);
-
-  &:not(:last-child) {
-    @include mq(mob-only) {
-      margin-bottom: 8px;
-    }
-  }
 
   &:hover {
     opacity: 0.8;
   }
 }
+

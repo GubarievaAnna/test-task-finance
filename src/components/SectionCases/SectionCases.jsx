@@ -31,28 +31,29 @@ const SectionCases = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
           sapiente!
         </p>
-        <div className={s.cases__wrapper}>
+        <ul className={s.cases__wrapper}>
           {images.map(el => (
-            <picture
-              key={el}
-              className={s.cases__image}
-              onClick={() => openLightBox(el)}
-            >
-              <source
-                srcSet={`${require(`../../images/cases/cases${el}.webp`)} 1x, ${require(`../../images/cases/cases${el}@2x.webp`)} 2x`}
-                type="image/webp"
-              />
-              <source
-                srcSet={`${require(`../../images/cases/cases${el}.jpg`)} 1x, ${require(`../../images/cases/cases${el}@2x.jpg`)} 2x`}
-                type="image/jpeg"
-              />
-              <img
-                src={require(`../../images/cases/cases${el}.jpg`)}
-                alt={'Case ' + el}
-              />
-            </picture>
+            <li key={el} className={s.cases__item}>
+              <picture
+                className={s.cases__image}
+                onClick={() => openLightBox(el)}
+              >
+                <source
+                  srcSet={`${require(`../../images/cases/cases${el}.webp`)} 1x, ${require(`../../images/cases/cases${el}@2x.webp`)} 2x`}
+                  type="image/webp"
+                />
+                <source
+                  srcSet={`${require(`../../images/cases/cases${el}.jpg`)} 1x, ${require(`../../images/cases/cases${el}@2x.jpg`)} 2x`}
+                  type="image/jpeg"
+                />
+                <img
+                  src={require(`../../images/cases/cases${el}.jpg`)}
+                  alt={'Case ' + el}
+                />
+              </picture>
+            </li>
           ))}
-        </div>
+        </ul>
         {isOpen && (
           <LightBox
             setIsOpen={setIsOpen}
